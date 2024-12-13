@@ -1,0 +1,60 @@
+Git - GitHub
+-versiyon kontrol sistemi
+-savepoint kaydetme noktası commit
+ls :İçeresinde bulunduğumuz dosyaları-klasörleri gösterir.
+pwd :Bulunan klasörü gösterir.(Nerde olduğumuzu gösterir.)
+cd Documents: İçerisine girer. 
+              klasör değiştir anlamına gelir.
+cd .. :Bir önceki klasöre geri gelir.
+clear :Ekranı temizler.
+mkdir GitKursu :Klasör oluştur.
+touch not.txt : Metin dosyası oluştur.
+rm not.txt :Kaldır.(Sadece dosyaları siler.)
+rm -rf GitKursu : Klasörü de siliyor.
+git --version
+git config --global user.name "Dilek Altacı"
+git config user.name 
+…………………….
+git config --global user.email "dilekaltaci910@gmail.com"
+git config user.email
+…………………
+commit :Tamamlayıp bir sonrakine geçme!
+branch :dallanma-dallara ayrılma (Tek başına da çok kişiyle de)
+git status :Gitin güncel durumunu gösterir.
+git init: Yeni bir Git deposu oluşturulur.
+ls -la :Gizli klasörleri gösterir.
+cd .git :İçerisine bakabiliyoruz.
+rm -rf.git :Sildik.
+git add :Değiştirilen,yeni eklenen dosyaları "staging area" ekleyerek bir sonraki commitin parçası olmasını sağlar.
+git commit -m "............."
+git log :Logları gösterir.Daha önceki commitleri gösterir.Hangi commiti kimin yazdığı da görülür.
+commit..........(Head-> master) :Ana branchin içindeyiz.
+git commit -a :Direkt komut tek satırda 
+git add . :Her şeyi ekler.
+insertions :Boşlukları da dahil eder.
+Vim :Git'in varsayılan olarak kullandığı terminal tabanlı bir editördür.
+Gitignore :Git deposunda hangi dosyaların ve dizinlerin versiyon kontrolüne dahil edilmeyeceğini belirlemek için kullanılır.
+touch .gitignore gizli.txt
+git add . yazılsa bile gizli.txt eklenmez.
+Head : Güncel çalıştığımız konumu,hangi commit üzerinde çalıştığımızı belirler.
+Branch :Aynı anda farklı özellikler veya düzeltmeler üzerinde çalışmaya olanak sağlar.
+git branch feat :Yeni bir özellik eklenecek...
+git switch :Branch'ler arasında geçiş yapmak için kullanılır.
+git switch master :Master dalına geçmek ve bu daaldaki en son commiti ayarlamak anlamına gelir.
+git merge feat :Git'te dalları birleştirmek için kullanılır.
+Fast forwarding :Branch'leri birleştirirken ana branch'te herhangi bir değişiklik yapılmadıysa, hiç bir çakışma çıkarmadan kolaylıkla gerçekleşen ve ileri sarma olarak da bilinen işlem.(Hızlı ileri sarma)
+Pull Request :GitHub içerisinde yaptığımız değişiklikleri ana branch ile birleştirmek için bir istek açıp repo sahibine bildirimde bulunabiliriz.
+Stash :Geçici olarak değişiklikleri kaydetme.
+git stash pop veya git stash apply : Değişiklikleri geri yükleme.
+git stash clear :Hepsini siler.
+git checkout :Belirli bir commit'e geçiş yapabiliriz.Mevcut branch'ler arasında geçiş yapabiliriz.Çalışma dizinindeki belirli bir dosyayı önceki duruma geri döndürmek için kullanabiliriz.
+git reset :Son commitleri kaldırır.
+git reset --hard ..... :Komple içerikleri de siler.
+git revert :Belirtilen bir commit'in etkisini tersine çeviren yeni bir commit oluşturur.Bir hata düzeltilir ya da geri alınır.
+git diff :Değişiklikleri, belirli dosyalar arasındaki farkları ve geçmiş commit'ler arasındaki farklılıkları gösterir.Tek başına çalıştırınca göstermez. (git diff HEAD)
+git rebase master :Aradaki merge commitlerden kurtulmak.(Başka kişiler tarafından kullanılmamış olması gerek!)
+GitHub :Git kullanarak kod projelerini barındırma,yönetme ve diğer insanlarla iş birliği yapma imkânı sağlar.
+Fork :Bir projeyi bağımsız olarak kopyalamak ve üzerinde değişiklikler yapmak.(Kendi repolarımın içine kaydedilir ve açık kaynak projeleri geliştirmek için kullanılır.)
+Clone :Bir Git deposunun yerel bir kopyasını oluşturmak.(Bilgisayarımıza klonlamak)
+
+ 
